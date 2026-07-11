@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CyberEdu - Platform edukasi cyber security dengan artikel, simulasi phishing, tips keamanan, dan quiz interaktif."
+    />
+    <meta
+      name="keywords"
+      content="cyber security, keamanan digital, phishing, tutorial"
+    />
+    <meta name="author" content="CyberEdu" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+
+    <!-- Title -->
+    <title>CyberEdu | Edukasi Cyber Security</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Section CSS -->
+    <link rel="stylesheet" href="assets/css/about-home.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/statistics.css" />
+    <link rel="stylesheet" href="assets/css/feature.css" />
+    <link rel="stylesheet" href="assets/css/article.css" />
+    <link rel="stylesheet" href="assets/css/tips.css" />
+    <link rel="stylesheet" href="assets/css/phishing.css" />
+    <link rel="stylesheet" href="assets/css/quiz.css" />
+    <link rel="stylesheet" href="assets/css/cta.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/logo.png" alt="CyberEdu Logo" />
+          <span>Cyber Education</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="tips.html">Tips</a>
+          <a href="phishing.html">Simulasi</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+
+        <a href="quiz.html" class="btn-primary">Mulai Belajar</a>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            Edukasi Cyber Security
+          </span>
+
+          <h1>
+            Lindungi Dirimu
+            <br />
+            Dari Ancaman
+            <span>Dunia Digital</span>
+          </h1>
+
+          <p>
+            Pelajari keamanan siber melalui artikel, simulasi phishing, tips
+            keamanan, dan kuis interaktif agar menjadi pengguna internet yang
+            lebih aman.
+          </p>
+
+          <div class="hero-button">
+            <a href="quiz.html" class="btn-primary">Mulai Belajar</a>
+            <a href="phishing.html" class="btn-outline">Simulasi Phishing</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/images/hero/hero-robot.png" alt="Robot" />
+
+          <div class="floating-card">
+            <i class="fa-solid fa-shield-check"></i>
+            <div>
+              <h4>100% Aman</h4>
+              <p>Cyber Protection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stats-card">
+            <i class="fa-solid fa-book"></i>
+            <h2 class="counter" data-target="25">0</h2>
+            <p>Artikel Edukasi</p>
+          </div>
+
+          <div class="stats-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Tips Keamanan</p>
+          </div>
+
+          <div class="stats-card">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+            <h2 class="counter" data-target="15">0</h2>
+            <p>Simulasi Phishing</p>
+          </div>
+
+          <div class="stats-card">
+            <i class="fa-solid fa-user-graduate"></i>
+            <h2 class="counter" data-target="1000">0</h2>
+            <p>Pengguna Belajar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="feature">
+      <div class="container">
+        <div class="section-title">
+          <span>Fitur Utama</span>
+          <h2>Belajar Cyber Security Dengan Cara Interaktif</h2>
+          <p>
+            Website ini menyediakan berbagai media pembelajaran agar keamanan
+            digital lebih mudah dipahami.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/icons/article.png" alt="Artikel" />
+            </div>
+            <h3>Artikel Edukasi</h3>
+            <p>
+              Pelajari dasar hingga materi lanjutan mengenai keamanan siber.
+            </p>
+            <a href="artikel.html">
+              Selengkapnya
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/icons/tips.png" alt="Tips" />
+            </div>
+            <h3>Tips Keamanan</h3>
+            <p>Terapkan kebiasaan yang aman ketika menggunakan internet.</p>
+            <a href="tips.html">
+              Selengkapnya
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/icons/phishing.png" alt="Phishing" />
+            </div>
+            <h3>Simulasi Phishing</h3>
+            <p>Belajar mengenali email dan website palsu secara langsung.</p>
+            <a href="phishing.html">
+              Selengkapnya
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="assets/images/icons/quiz.png" alt="Quiz" />
+            </div>
+            <h3>Quiz Interaktif</h3>
+            <p>Uji kemampuanmu dengan soal cyber security yang menarik.</p>
+            <a href="quiz.html">
+              Selengkapnya
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-home">
+      <div class="container about-container">
+        <div class="about-image">
+          <img
+            src="assets/images/hero/cyber-security.png"
+            alt="Cyber Security"
+          />
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Tentang Cyber Security</span>
+
+          <h2>
+            Apa Itu
+            <span>Cyber Security?</span>
+          </h2>
+
+          <p>
+            Cyber Security adalah praktik melindungi sistem, jaringan,
+            perangkat, dan data dari ancaman digital seperti malware, phishing,
+            ransomware, serta berbagai bentuk serangan siber lainnya.
+          </p>
+
+          <p>
+            Melalui website ini kamu dapat belajar dasar-dasar keamanan digital
+            dengan cara yang interaktif, mudah dipahami, dan menyenangkan.
+          </p>
+
+          <div class="about-list">
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Materi mudah dipahami
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Simulasi nyata
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Quiz interaktif
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-check"></i>
+              Update materi terbaru
+            </div>
+          </div>
+
+          <a href="articles.html" class="btn-primary">Pelajari Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles">
+      <div class="container">
+        <div class="section-title">
+          <span>Artikel Terbaru</span>
+          <h2>Pelajari Dunia Cyber Security</h2>
+          <p>
+            Tingkatkan pengetahuanmu melalui berbagai artikel mengenai keamanan
+            digital.
+          </p>
+        </div>
+
+        <div class="article-grid">
+          <article class="article-card">
+            <img
+              src="assets/images/articles/cyber.png"
+              alt="Cyber Security"
+            />
+            <div class="article-content">
+              <span class="category">Dasar</span>
+              <h3>Apa Itu Cyber Security?</h3>
+              <p>
+                Mengenal konsep dasar keamanan siber untuk melindungi data dan
+                perangkat.
+              </p>
+              <a href="detail-artikel/cyber.html">
+                Baca Selengkapnya
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img src="assets/images/articles/phishing.png" alt="Phishing" />
+            <div class="article-content">
+              <span class="category">Phishing</span>
+              <h3>Cara Mengenali Email Phishing</h3>
+              <p>
+                Pelajari ciri-ciri email palsu sebelum menjadi korban penipuan.
+              </p>
+              <a href="detail-artikel/phishing.html">
+                Baca Selengkapnya
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <img
+              src="assets/images/articles/pasword.png"
+              alt="Password"
+            />
+            <div class="article-content">
+              <span class="category">Password</span>
+              <h3>Membuat Password yang Aman</h3>
+              <p>Gunakan password yang kuat agar akun tetap terlindungi.</p>
+              <a href="detail-artikel/password-security.html">
+                Baca Selengkapnya
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips">
+      <div class="container">
+        <div class="section-title">
+          <span>Tips Keamanan</span>
+
+          <h2>Biasakan Kebiasaan Digital yang Aman</h2>
+
+          <p>
+            Terapkan beberapa langkah sederhana berikut agar akun dan data
+            pribadimu tetap terlindungi.
+          </p>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip-card">
+            <img src="assets/images/tips/strong-password.png" alt="Password" />
+
+            <h3>Gunakan Password Kuat</h3>
+
+            <p>
+              Gunakan kombinasi huruf besar, huruf kecil, angka, dan simbol agar
+              password sulit ditebak.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <img src="assets/images/tips/two-factor.png" alt="2FA" />
+
+            <h3>Aktifkan Two-Factor Authentication</h3>
+
+            <p>
+              Tambahkan lapisan keamanan menggunakan kode verifikasi saat login.
+            </p>
+          </div>
+
+          <div class="tip-card">
+            <img src="assets/images/tips/update-system.png" alt="Update" />
+
+            <h3>Selalu Update Sistem</h3>
+
+            <p>
+              Perbarui sistem operasi dan aplikasi secara berkala untuk menutup
+              celah keamanan.
+            </p>
+          </div>
+        </div>
+
+        <div class="tips-button">
+          <a href="tips.html" class="btn-primary"> Lihat Semua Tips </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phishing Simulation Section -->
+
+    <section class="phishing">
+      <div class="container phishing-container">
+        <div class="phishing-content">
+          <span class="section-tag"> Simulasi Phishing </span>
+
+          <h2>
+            Bisakah Kamu
+            <span>Mengenali Phishing?</span>
+          </h2>
+
+          <p>
+            Phishing merupakan salah satu metode penipuan yang paling sering
+            digunakan oleh pelaku kejahatan siber. Pelajari ciri-cirinya melalui
+            simulasi interaktif.
+          </p>
+
+          <ul class="phishing-list">
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Simulasi Email Palsu
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Website Login Palsu
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Penjelasan Kesalahan
+            </li>
+
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Quiz Interaktif
+            </li>
+          </ul>
+
+          <a href="phishing.html" class="btn-primary"> Coba Simulasi </a>
+        </div>
+
+        <div class="phishing-preview">
+          <img src="assets/images/phishing/simulasi2.png" alt="Fake Email" />
+
+          <div class="warning-card">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <div>
+              <h4>Waspada!</h4>
+
+              <p>Email ini mengandung indikasi phishing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-preview">
+      <div class="container quiz-container">
+        <div class="quiz-image">
+          <img src="assets/images/quiz/quiz-banner.png" alt="Quiz" />
+        </div>
+
+        <div class="quiz-content">
+          <span class="section-tag"> Cyber Challenge </span>
+
+          <h2>
+            Uji Pengetahuanmu
+            <span>Sekarang</span>
+          </h2>
+
+          <p>
+            Setelah mempelajari materi cyber security, saatnya menguji
+            kemampuanmu melalui quiz interaktif yang menyenangkan.
+          </p>
+
+          <div class="quiz-info">
+            <div class="quiz-box">
+              <h3>10+</h3>
+
+              <span>Pertanyaan</span>
+            </div>
+
+            <div class="quiz-box">
+              <h3>100</h3>
+
+              <span>Skor Maksimal</span>
+            </div>
+
+            <div class="quiz-box">
+              <h3>🏆</h3>
+
+              <span>Reward</span>
+            </div>
+          </div>
+
+          <a href="quiz.html" class="btn-primary"> Mulai Quiz </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo/logo.png" alt="CyberEdu" />
+
+            <span>CyberEducation</span>
+          </a>
+
+          <p>
+            Platform edukasi cyber security yang membantu masyarakat memahami
+            keamanan digital melalui artikel, tips, simulasi phishing, dan quiz
+            interaktif.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/puttraaa.p?igsh=MW1tandiN2hkZmlldg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigasi</h3>
+
+          <a href="index.html">Beranda</a>
+
+          <a href="articles.html">Artikel</a>
+
+          <a href="tips.html">Tips</a>
+
+          <a href="phishing.html">Simulasi</a>
+
+          <a href="quiz.html">Quiz</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Kategori</h3>
+
+          <a href="detail-artikel/cyber.html">Cyber Security</a>
+
+          <a href="detail-artikel/phishing.html">Phishing</a>
+
+          <a href="detail-artikel/password-security.html">Password</a>
+
+          <a href="detail-artikel/malware.html">Malware</a>
+
+          <a href="detail-artikel/data-security.html">Data Privacy</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Kontak</h3>
+
+          <p><i class="fa-solid fa-envelope"></i> putrataka992@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone"></i> +62 85649900151</p>
+
+          <p><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-copy">
+          <p>© 2026 CyberEdu. All Rights Reserved.</p>
+
+          <a href="#" class="back-top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/footer.js"></script>
+  </body>
+</html>

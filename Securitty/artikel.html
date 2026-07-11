@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel | CyberEdu</title>
+
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/article.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/logo.png" alt="Logo" />
+          <span>CyberEdu</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html">Beranda</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="tips.html">Tips</a>
+          <a href="phishing.html">Simulasi</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="article-hero">
+        <div class="container article-hero-container">
+          <div class="article-hero-content">
+            <span class="section-tag">
+              <i class="fa-solid fa-book-open"></i>
+              Cyber Security Articles
+            </span>
+            <h1>
+              Temukan
+              <span>Artikel Terbaru</span>
+              Tentang Cyber Security
+            </h1>
+            <p>
+              Pelajari berbagai materi mengenai keamanan digital, malware,
+              phishing, keamanan password, jaringan, hingga perlindungan data.
+            </p>
+            <div class="article-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari artikel..."
+              />
+            </div>
+          </div>
+
+          <div class="article-hero-image">
+            <img
+              src="assets/images/hero/hero-robot.png"
+              alt="Banner Artikel"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FILTER SECTION -->
+      <section class="article-filter">
+        <div class="container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="Cyber Security">
+              Cyber Security
+            </button>
+            <button class="filter-btn" data-filter="Phishing">Phishing</button>
+            <button class="filter-btn" data-filter="Malware">Malware</button>
+            <button class="filter-btn" data-filter="Password">Password</button>
+            <button class="filter-btn" data-filter="Network">Network</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTICLE LIST SECTION -->
+      <section class="article-list">
+        <div class="container">
+          <!-- Grid Artikel -->
+          <div class="article-grid" id="articleContainer">
+            <article class="article-card" data-category="Cyber Security">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/cyber.png"
+                  alt="Cyber Security"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Cyber Security</span>
+                <h3>Apa Itu Cyber Security?</h3>
+                <p>
+                  Mengenal dasar keamanan siber untuk melindungi data, jaringan,
+                  dan perangkat dari berbagai ancaman digital.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 10 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 Menit</span>
+                </div>
+                <a href="detail-artikel/cyber.html" class="read-more">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Phishing">
+              <div class="article-image">
+                <img src="assets/images/articles/phishing.png" alt="Phishing" />
+              </div>
+              <div class="article-content">
+                <span class="category">Phishing</span>
+                <h3>Cara Mengenali Email Phishing</h3>
+                <p>
+                  Pelajari berbagai ciri email palsu agar terhindar dari
+                  pencurian akun dan data pribadi.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 11 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 6 Menit</span>
+                </div>
+                <a href="detail-artikel/phishing.html" class="read-more">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Password">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/pasword.png"
+                  alt="Password"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Password</span>
+                <h3>Membuat Password yang Aman</h3>
+                <p>
+                  Gunakan password yang kuat dan unik untuk meningkatkan
+                  keamanan seluruh akun digitalmu.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 13 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 4 Menit</span>
+                </div>
+                <a
+                  href="detail-artikel/password-security.html"
+                  class="read-more"
+                >
+                  <span>Baca Selengkapnya</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+              </div>
+
+            </article>
+
+            <article class="article-card" data-category="Malware">
+              <div class="article-image">
+                <img src="assets/images/articles/malware.png" alt="Malware" />
+              </div>
+              <div class="article-content">
+                <span class="category">Malware</span>
+                <h3>Mengenal Jenis Malware</h3>
+                <p>
+                  Kenali virus, worm, trojan, ransomware, spyware, dan berbagai
+                  malware lainnya.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 15 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 8 Menit</span>
+                </div>
+                <a href="detail-artikel/malware.html" class="read-more">
+                  <span>Baca Selengkapnya</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Network">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/network.png"
+                  alt="Network"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Network</span>
+                <h3>Keamanan Jaringan Komputer</h3>
+                <p>
+                  Pelajari firewall, VPN, IDS, IPS, dan keamanan jaringan
+                  modern.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 17 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 7 Menit</span>
+                </div>
+                <a
+                  href="detail-artikel/network-security.html"
+                  class="read-more"
+                >
+                  <span>Baca Selengkapnya</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Cyber Security">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/cyber.png"
+                  alt="Data Security"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Cyber Security</span>
+                <h3>Melindungi Data Pribadi</h3>
+                <p>
+                  Cara menjaga privasi dan keamanan data saat menggunakan
+                  internet setiap hari.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 20 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 5 Menit</span>
+                </div>
+                <a href="detail-artikel/data-security.html" class="read-more">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Password">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/pasword.png"
+                  alt="Password Manager"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Password</span>
+                <h3>Mengapa Password Manager Penting?</h3>
+                <p>
+                  Password Manager membantu menyimpan dan menghasilkan password
+                  yang kuat untuk setiap akun.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 22 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 6 Menit</span>
+                </div>
+                <a
+                  href="detail-artikel/password-manager.html"
+                  class="read-more"
+                >
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Phishing">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/phishing.png"
+                  alt="Social Engineering"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Phishing</span>
+                <h3>Apa Itu Social Engineering?</h3>
+                <p>
+                  Kenali teknik manipulasi psikologis yang digunakan penjahat
+                  siber untuk mencuri informasi.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 24 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 8 Menit</span>
+                </div>
+                <a
+                  href="detail-artikel/social-engineering.html"
+                  class="read-more"
+                >
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="article-card" data-category="Malware">
+              <div class="article-image">
+                <img
+                  src="assets/images/articles/malware.png"
+                  alt="Ransomware"
+                />
+              </div>
+              <div class="article-content">
+                <span class="category">Malware</span>
+                <h3>Ransomware dan Cara Menghindarinya</h3>
+                <p>
+                  Pelajari bagaimana ransomware bekerja dan langkah-langkah
+                  untuk mencegah infeksi.
+                </p>
+                <div class="article-meta">
+                  <span><i class="fa-solid fa-user"></i> Admin</span>
+                  <span><i class="fa-solid fa-calendar"></i> 28 Jul 2026</span>
+                  <span><i class="fa-regular fa-clock"></i> 9 Menit</span>
+                </div>
+                <a href="detail-artikel/ransomware.html" class="read-more">
+                  Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section class="newsletter">
+        <div class="container newsletter-container">
+          <div class="newsletter-content">
+            <h2>Dapatkan Update Artikel Terbaru</h2>
+            <p>
+              Berlangganan newsletter CyberEdu dan dapatkan artikel terbaru
+              seputar keamanan siber langsung ke email kamu.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Masukkan Email Anda" required />
+            <button type="submit" class="btn-primary">Berlangganan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo/logo.png" alt="CyberEdu" />
+
+            <span>CyberEducation</span>
+          </a>
+
+          <p>
+            Platform edukasi cyber security yang membantu masyarakat memahami
+            keamanan digital melalui artikel, tips, simulasi phishing, dan quiz
+            interaktif.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/puttraaa.p?igsh=MW1tandiN2hkZmlldg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigasi</h3>
+
+          <a href="index.html">Beranda</a>
+
+          <a href="articles.html">Artikel</a>
+
+          <a href="tips.html">Tips</a>
+
+          <a href="phishing.html">Simulasi</a>
+
+          <a href="quiz.html">Quiz</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Kategori</h3>
+
+          <a href="detail-artikel/cyber.html">Cyber Security</a>
+
+          <a href="detail-artikel/phishing.html">Phishing</a>
+
+          <a href="detail-artikel/password-security.html">Password</a>
+
+          <a href="detail-artikel/malware.html">Malware</a>
+
+          <a href="detail-artikel/data-security.html">Data Privacy</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Kontak</h3>
+
+          <p><i class="fa-solid fa-envelope"></i> putrataka992@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone"></i> +62 85649900151</p>
+
+          <p><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-copy">
+          <p>© 2026 CyberEdu. All Rights Reserved.</p>
+
+          <a href="#" class="back-top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/article.js"></script>
+    <script src="assets/js/footer.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "Apa Itu Cyber Security?",
+    "category": "Cyber Security",
+    "image": "assets/images/articles/cyber-security.png",
+    "author": "Admin",
+    "date": "10 Juli 2026",
+    "read": "5 Menit"
+  },
+
+  {
+    "id": 2,
+    "title": "Cara Mengenali Email Phishing",
+    "category": "Phishing",
+    "image": "assets/images/articles/phishing.png",
+    "author": "Admin",
+    "date": "11 Juli 2026",
+    "read": "6 Menit"
+  },
+
+  {
+    "id": 3,
+    "title": "Password Yang Aman",
+    "category": "Password",
+    "image": "assets/images/articles/password-security.png",
+    "author": "Admin",
+    "date": "13 Juli 2026",
+    "read": "4 Menit"
+  },
+
+  {
+    "id": 4,
+    "title": "Mengenal Malware",
+    "category": "Malware",
+    "image": "assets/images/articles/malware.png",
+    "author": "Admin",
+    "date": "15 Juli 2026",
+    "read": "8 Menit"
+  },
+
+  {
+    "id": 5,
+    "title": "Keamanan Jaringan",
+    "category": "Network",
+    "image": "assets/images/articles/network-security.png",
+    "author": "Admin",
+    "date": "17 Juli 2026",
+    "read": "7 Menit"
+  },
+
+  {
+    "id": 6,
+    "title": "Melindungi Data Pribadi",
+    "category": "Cyber Security",
+    "image": "assets/images/articles/data-security.png",
+    "author": "Admin",
+    "date": "20 Juli 2026",
+    "read": "5 Menit"
+  },
+
+  {
+    "id": 7,
+    "title": "Password Manager",
+    "category": "Password",
+    "image": "assets/images/articles/password-manager.png",
+    "author": "Admin",
+    "date": "22 Juli 2026",
+    "read": "6 Menit"
+  },
+
+  {
+    "id": 8,
+    "title": "Social Engineering",
+    "category": "Phishing",
+    "image": "assets/images/articles/social-engineering.png",
+    "author": "Admin",
+    "date": "24 Juli 2026",
+    "read": "8 Menit"
+  },
+
+  {
+    "id": 9,
+    "title": "Bahaya Ransomware",
+    "category": "Malware",
+    "image": "assets/images/articles/ransomware.png",
+    "author": "Admin",
+    "date": "28 Juli 2026",
+    "read": "9 Menit"
+  }
+]

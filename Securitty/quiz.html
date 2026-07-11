@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz | CyberEdu</title>
+
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/quiz.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/logo.png" alt="CyberEdu Logo" />
+          <span>Cyber Education</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="tips.html">Tips</a>
+          <a href="phishing.html">Simulasi</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="quiz-hero">
+        <div class="container quiz-hero-container">
+          <div class="quiz-content">
+            <span class="section-tag">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Cyber Security Quiz
+            </span>
+            <h1>
+              Uji Pengetahuanmu Tentang
+              <span>Cyber Security</span>
+            </h1>
+            <p>
+              Uji kemampuanmu melalui 6 kategori quiz Cyber Security yang
+              terdiri dari 90 soal interaktif. Pelajari konsep dasar keamanan
+              digital, phishing, password, malware, network security, serta
+              perlindungan data pribadi.
+            </p>
+            <a href="#quiz-list" class="btn-primary">Mulai Quiz</a>
+          </div>
+
+          <div class="quiz-image">
+            <img src="assets/images/hero/hero-robot.png" alt="Quiz Hero Image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS SECTION -->
+      <section class="quiz-stat">
+        <div class="container">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <i class="fa-solid fa-book"></i>
+
+              <h2>90</h2>
+
+              <p>Total Soal</p>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-layer-group"></i>
+
+              <h2>6</h2>
+
+              <p>Kategori Quiz</p>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-clock"></i>
+
+              <h2>10 Menit</h2>
+
+              <p>Durasi Setiap Quiz</p>
+            </div>
+
+            <div class="stat-card">
+              <i class="fa-solid fa-award"></i>
+
+              <h2>100%</h2>
+
+              <p>Gratis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED QUIZ -->
+      <section class="featured-quiz">
+        <div class="container">
+          <div class="featured-card">
+            <div class="featured-image">
+              <img src="assets/images/articles/cyber.png" alt="Featured Quiz" />
+            </div>
+            <div class="featured-content">
+              <span>Quiz Unggulan</span>
+              <h2>Cyber Security Basic</h2>
+
+              <p>
+                Mulailah perjalananmu mempelajari keamanan siber melalui 15 soal
+                dasar yang membahas ancaman digital, keamanan data, firewall,
+                backup, hingga autentikasi dua faktor.
+              </p>
+
+              <ul>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  15 Soal
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  10 Menit
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+
+                  Level Beginner
+                </li>
+              </ul>
+
+              <a href="quiz-play.html?quiz=basic" class="btn-primary">
+                Mulai Quiz
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIZ LIST SECTION -->
+      <section id="quiz-list" class="quiz-list">
+        <div class="container">
+          <div class="quiz-grid">
+            <!-- Card 1 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/cyber.png"
+                  alt="Cyber Security Basic"
+                />
+                <span class="difficulty beginner">Beginner</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Cyber Security Basic</h3>
+
+                <p>
+                  Pelajari dasar-dasar keamanan siber, ancaman digital,
+                  firewall, backup data, dan autentikasi.
+                </p>
+
+                <div class="quiz-meta">
+                  <span>
+                    <i class="fa-solid fa-list-check"></i>
+
+                    15 Soal
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+
+                    10 Menit
+                  </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=basic" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/phishing.png"
+                  alt="Phishing Challenge"
+                />
+                <span class="difficulty intermediate">Intermediate</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Phishing Challenge</h3>
+
+                <p>
+                  Uji kemampuan mengenali email palsu, website phishing, SMS
+                  penipuan, dan teknik social engineering.
+                </p>
+
+                <div class="quiz-meta">
+                  <span> 15 Soal </span>
+
+                  <span> 10 Menit </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=phishing" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/pasword.png"
+                  alt="Password Security"
+                />
+                <span class="difficulty beginner">Beginner</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Password Security</h3>
+
+                <p>
+                  Pelajari cara membuat password kuat, menggunakan Password
+                  Manager, serta Two-Factor Authentication (2FA).
+                </p>
+
+                <div class="quiz-meta">
+                  <span> 15 Soal </span>
+
+                  <span> 10 Menit </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=password" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/malware.png"
+                  alt="Malware Detection"
+                />
+                <span class="difficulty advanced">Advanced</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Malware Detection</h3>
+
+                <p>
+                  Kenali virus, worm, trojan, spyware, adware, dan ransomware
+                  beserta cara pencegahannya.
+                </p>
+
+                <div class="quiz-meta">
+                  <span> 15 Soal </span>
+
+                  <span> 10 Menit </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=malware" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/network.png"
+                  alt="Network Security"
+                />
+                <span class="difficulty advanced">Advanced</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Network Security</h3>
+
+                <p>
+                  Pelajari konsep keamanan jaringan seperti Firewall, VPN,
+                  HTTPS, IDS, IPS, dll. Berbagai cara melindungi dari serangan siber.
+                </p>
+
+                <div class="quiz-meta">
+                  <span> 15 Soal </span>
+
+                  <span> 10 Menit </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=network" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="quiz-card">
+              <div class="quiz-card-image">
+                <img
+                  src="assets/images/articles/privacy.png"
+                  alt="Privacy & Data Security"
+                />
+                <span class="difficulty beginner">Beginner</span>
+              </div>
+              <div class="quiz-card-content">
+                <h3>Privacy & Data Protection</h3>
+
+                <p>
+                  Pelajari perlindungan data pribadi, jejak digital, privasi
+                  media sosial, serta keamanan akun online.
+                </p>
+
+                <div class="quiz-meta">
+                  <span> 15 Soal </span>
+
+                  <span> 10 Menit </span>
+                </div>
+
+                <a href="quiz-play.html?quiz=privacy" class="btn-primary">
+                  Mulai Quiz
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS SECTION -->
+      <section class="quiz-benefit">
+        <div class="container">
+          <div class="section-title">
+            <p>
+              Setiap quiz dirancang berdasarkan materi yang tersedia pada
+              website CyberEdu sehingga pengguna dapat mengukur pemahaman
+              setelah mempelajari artikel dan tips keamanan siber.
+            </p>
+            <h2>Tingkatkan Kemampuan Cyber Security</h2>
+            <p>
+              Quiz interaktif dirancang untuk membantu memahami konsep keamanan
+              siber melalui latihan yang menyenangkan.
+            </p>
+          </div>
+          <div class="benefit-grid">
+            <div class="benefit-card">
+              <i class="fa-solid fa-brain"></i>
+              <h3>Latihan Pengetahuan</h3>
+              <p>
+                Menguji pemahaman setelah membaca artikel dan tips keamanan.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Lihat Perkembangan</h3>
+              <p>Ketahui peningkatan kemampuanmu melalui skor setiap quiz.</p>
+            </div>
+            <div class="benefit-card">
+              <i class="fa-solid fa-medal"></i>
+              <h3>Raih Nilai Terbaik</h3>
+              <p>
+                Tantang dirimu memperoleh skor sempurna pada setiap kategori.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Belajar Lebih Aman</h3>
+              <p>
+                Terapkan pengetahuan yang diperoleh dalam kehidupan sehari-hari.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATE SECTION -->
+      <section class="certificate">
+        <div class="container certificate-container">
+          <div class="certificate-image">
+            <img
+              src="assets/images/quiz/quiz-banner.png"
+              alt="Certificate Image"
+            />
+          </div>
+          <div class="certificate-content">
+            <span>Sertifikat Digital</span>
+            <h2>Dapatkan Sertifikat Setelah Menyelesaikan Quiz</h2>
+            <p>
+              Setelah berhasil menyelesaikan seluruh soal, kamu akan memperoleh
+              sertifikat digital sebagai bukti telah mengikuti pembelajaran
+              Cyber Security.
+            </p>
+            <a href="quiz-play.html" class="btn-primary">Mulai Sekarang</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="quiz-cta">
+        <div class="container quiz-cta-container">
+          <div class="cta-content">
+            <h2>Siap Menguji Kemampuanmu?</h2>
+            <p>
+              Kerjakan quiz sekarang dan lihat seberapa baik kamu memahami
+              keamanan siber.
+            </p>
+          </div>
+          <div class="cta-button">
+            <a href="quiz-play.html" class="btn-primary">Mulai Quiz</a>
+            <a href="artikel.html" class="btn-outline">Baca Artikel</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo/logo.png" alt="CyberEdu" />
+
+            <span>CyberEducation</span>
+          </a>
+
+          <p>
+            Platform edukasi cyber security yang membantu masyarakat memahami
+            keamanan digital melalui artikel, tips, simulasi phishing, dan quiz
+            interaktif.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/puttraaa.p?igsh=MW1tandiN2hkZmlldg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigasi</h3>
+
+          <a href="index.html">Beranda</a>
+
+          <a href="articles.html">Artikel</a>
+
+          <a href="tips.html">Tips</a>
+
+          <a href="phishing.html">Simulasi</a>
+
+          <a href="quiz.html">Quiz</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Kategori</h3>
+
+          <a href="detail-artikel/cyber.html">Cyber Security</a>
+
+          <a href="detail-artikel/phishing.html">Phishing</a>
+
+          <a href="detail-artikel/password-security.html">Password</a>
+
+          <a href="detail-artikel/malware.html">Malware</a>
+
+          <a href="detail-artikel/data-security.html">Data Privacy</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Kontak</h3>
+
+          <p><i class="fa-solid fa-envelope"></i> putrataka992@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone"></i> +62 85649900151</p>
+
+          <p><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-copy">
+          <p>© 2026 CyberEdu. All Rights Reserved.</p>
+
+          <a href="#" class="back-top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/footer.js"></script>
+  </body>
+</html>

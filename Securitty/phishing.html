@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Phishing | CyberEdu</title>
+
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/phishing.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/logo.png" alt="CyberEdu Logo" />
+          <span>Cyber Education</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="tips.html">Tips</a>
+          <a href="phishing.html">Simulasi</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="phishing-hero">
+        <div class="container phishing-hero-container">
+          <div class="hero-content">
+            <span class="section-tag">
+              <i class="fa-solid fa-shield-halved"></i>
+              Simulasi Phishing
+            </span>
+            <h1>
+              Belajar Mengenali
+              <span>Serangan Phishing</span>
+            </h1>
+            <p>
+              Uji kemampuanmu dalam mengenali email dan website palsu melalui
+              simulasi interaktif yang aman.
+            </p>
+            <a href="#email" class="btn-primary">Mulai Simulasi</a>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/hero/hero-robot.png" alt="Phishing" />
+          </div>
+        </div>
+      </section>
+
+      <!-- INFO / EDUKASI SECTION -->
+      <section class="phishing-info">
+        <div class="container">
+          <div class="section-title">
+            <span>Edukasi</span>
+            <h2>Apa Itu Phishing?</h2>
+            <p>
+              Phishing merupakan teknik penipuan yang bertujuan mencuri
+              informasi pribadi seperti username, password, kode OTP, dan data
+              kartu kredit dengan menyamar sebagai pihak terpercaya.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email Palsu</h3>
+              <p>
+                Penipu mengirim email yang terlihat resmi agar korban mengklik
+                tautan berbahaya.
+              </p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-globe"></i>
+              <h3>Website Palsu</h3>
+              <p>
+                Korban diarahkan menuju website tiruan untuk mencuri username
+                dan password.
+              </p>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h3>SMS Phishing</h3>
+              <p>
+                Pesan singkat yang mengarahkan korban ke halaman login palsu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EMAIL SIMULATION SECTION -->
+      <section id="email" class="email-simulation">
+        <div class="container">
+          <div class="section-title">
+            <span>Simulasi</span>
+            <h2>Email Mana Yang Aman?</h2>
+          </div>
+
+          <div class="email-grid">
+            <!-- Safe Email -->
+            <div class="email-card">
+              <div class="email-header">
+                <img src="assets/images/phishing/gmail-logo.png" alt="Gmail" />
+                <div>
+                  <h3>Google Account</h3>
+                  <span>security@google.com</span>
+                </div>
+              </div>
+              <div class="email-body">
+                <h4>Aktivitas Login Baru Terdeteksi</h4>
+                <p>
+                  Kami mendeteksi adanya login baru pada akun Google Anda. Jika
+                  aktivitas ini bukan dilakukan oleh Anda, segera lakukan
+                  pemeriksaan melalui halaman keamanan akun.
+                </p>
+                <button class="btn-primary safe-btn">Ini Email Aman</button>
+              </div>
+            </div>
+
+            <!-- Phishing Email -->
+            <div class="email-card phishing">
+              <div class="email-header">
+                <img src="assets/images/phishing/bank-logo.png" alt="Bank" />
+                <div>
+                  <h3>Bank Nasional</h3>
+                  <span>secure-bank@login-security.xyz</span>
+                </div>
+              </div>
+              <div class="email-body">
+                <h4>Rekening Anda Akan Diblokir!</h4>
+                <p>
+                  Segera login dalam waktu 30 menit agar rekening Anda tidak
+                  diblokir permanen.
+                </p>
+                <button class="btn-danger phishing-btn">
+                  Ini Email Phishing
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WEBSITE SIMULATION SECTION -->
+      <section class="website-simulation">
+        <div class="container">
+          <div class="section-title">
+            <span>Simulasi Website</span>
+            <h2>Perhatikan URL Website</h2>
+            <p>Pilih website yang menurutmu merupakan website resmi.</p>
+          </div>
+
+          <div class="website-grid">
+            <!-- Safe Website -->
+            <div class="website-card">
+              <img
+                src="assets/images/phishing/simulasi1.png"
+                alt="Website Aman"
+              />
+              <h3></h3>
+              <button class="btn-primary website-safe">Website Aman</button>
+            </div>
+
+            <!-- Fake Website -->
+            <div class="website-card fake">
+              <img
+                src="assets/images/phishing/simulasi2.png"
+                alt="Website Palsu"
+              />
+              <h3></h3>
+              <button class="btn-danger website-phishing">
+                Website Phishing
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WARNING SECTION -->
+      <section class="warning-section">
+        <div class="container">
+          <div class="warning-card">
+            <div class="warning-icon">
+              <img src="assets/images/phishing/simulasi.png" alt="Warning" />
+            </div>
+            <div class="warning-content">
+              <h2>Ciri-Ciri Phishing</h2>
+              <ul>
+                <li>Alamat email tidak resmi.</li>
+                <li>URL website mencurigakan.</li>
+                <li>Meminta password atau kode OTP.</li>
+                <li>Menggunakan kalimat yang mendesak.</li>
+                <li>Banyak kesalahan penulisan.</li>
+                <li>Meminta mengklik tautan tertentu.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIZ SECTION -->
+      <section class="phishing-quiz">
+        <div class="container">
+          <div class="section-title">
+            <span>Mini Quiz</span>
+            <h2>Uji Pengetahuanmu</h2>
+            <p>
+              Jawab pertanyaan berikut untuk mengetahui seberapa baik kamu
+              memahami phishing.
+            </p>
+          </div>
+
+          <div class="quiz-card">
+            <h3>
+              Jika menerima email yang meminta kode OTP, apa yang harus
+              dilakukan?
+            </h3>
+            <div class="quiz-options">
+              <button class="quiz-option wrong">
+                Berikan kode OTP agar akun tetap aktif
+              </button>
+              <button class="quiz-option correct">
+                Abaikan email dan jangan pernah membagikan OTP
+              </button>
+              <button class="quiz-option wrong">
+                Kirim password melalui email
+              </button>
+              <button class="quiz-option wrong">
+                Klik semua tautan yang ada pada email
+              </button>
+            </div>
+
+            <div class="quiz-result">
+              <p id="quizMessage">Pilih salah satu jawaban.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="phishing-cta">
+        <div class="container phishing-cta-container">
+          <div class="cta-content">
+            <h2>Sudah Paham Cara Mengenali Phishing?</h2>
+            <p>
+              Lanjutkan pembelajaranmu dengan membaca artikel keamanan siber dan
+              mengerjakan quiz interaktif.
+            </p>
+          </div>
+          <div class="cta-button">
+            <a href="artikel.html" class="btn-primary">Baca Artikel</a>
+            <a href="quiz.html" class="btn-outline">Kerjakan Quiz</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo/logo.png" alt="CyberEdu" />
+
+            <span>CyberEducation</span>
+          </a>
+
+          <p>
+            Platform edukasi cyber security yang membantu masyarakat memahami
+            keamanan digital melalui artikel, tips, simulasi phishing, dan quiz
+            interaktif.
+          </p>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://www.instagram.com/puttraaa.p?igsh=MW1tandiN2hkZmlldg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navigasi</h3>
+
+          <a href="index.html">Beranda</a>
+
+          <a href="articles.html">Artikel</a>
+
+          <a href="tips.html">Tips</a>
+
+          <a href="phishing.html">Simulasi</a>
+
+          <a href="quiz.html">Quiz</a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Kategori</h3>
+
+          <a href="detail-artikel/cyber.html">Cyber Security</a>
+
+          <a href="detail-artikel/phishing.html">Phishing</a>
+
+          <a href="detail-artikel/password-security.html">Password</a>
+
+          <a href="detail-artikel/malware.html">Malware</a>
+
+          <a href="detail-artikel/data-security.html">Data Privacy</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Kontak</h3>
+
+          <p><i class="fa-solid fa-envelope"></i> putrataka992@gmail.com</p>
+
+          <p><i class="fa-solid fa-phone"></i> +62 85649900151</p>
+
+          <p><i class="fa-solid fa-location-dot"></i> Indonesia</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-copy">
+          <p>© 2026 CyberEdu. All Rights Reserved.</p>
+
+          <a href="#" class="back-top">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/phishing.js"></script>
+    <script src="assets/js/footer.js"></script>
+  </body>
+</html>
+

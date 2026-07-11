@@ -1,0 +1,199 @@
+/* Laptop */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 92%;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .section-title h2 {
+    font-size: 38px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+
+    top: 80px;
+    right: -100%;
+
+    width: 280px;
+
+    height: calc(100vh - 80px);
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 40px 30px;
+
+    gap: 25px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .navbar .btn-primary {
+    display: none;
+  }
+
+  .hero-container,
+  .about-container,
+  .quiz-container,
+  .phishing-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .hero-content p,
+  .about-content p,
+  .quiz-content p,
+  .phishing-content p {
+    margin: auto;
+  }
+
+  .hero-button,
+  .cta-button {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .floating-card,
+  .warning-card {
+    position: static;
+
+    margin-top: 25px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid,
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .hero {
+    padding-top: 120px;
+
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+
+  .hero-button {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .stats-grid,
+  .feature-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+
+    text-align: left;
+  }
+
+  .quiz-info {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-copy {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .about-content h2,
+  .phishing-content h2,
+  .quiz-content h2,
+  .cta h2 {
+    font-size: 32px;
+  }
+
+  .stats-card h2 {
+    font-size: 34px;
+  }
+}

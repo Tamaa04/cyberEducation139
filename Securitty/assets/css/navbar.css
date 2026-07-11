@@ -1,0 +1,126 @@
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 20px 0;
+
+  z-index: 1000;
+
+  transition: 0.3s;
+}
+
+.navbar.scrolled {
+   background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(0,0,0,.05);
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+/* Navigation */
+
+.nav-container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.logo img {
+  width: 42px;
+}
+
+/* Menu */
+
+.nav-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+
+  position: relative;
+}
+
+
+.nav-menu a {
+  font-size: 16px;
+
+  font-weight: 500;
+
+  color: var(--text-light);
+
+  transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--primary);
+}
+
+/* Button */
+
+.btn-primary {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  color: #fff;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(91, 91, 247, 0.35);
+}
+
+/* Mobile */
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile menu visibility handled via .nav-menu.active in responsive.css */
+@media (max-width: 992px) {
+  .nav-menu {
+    overflow: hidden;
+  }
+}
+

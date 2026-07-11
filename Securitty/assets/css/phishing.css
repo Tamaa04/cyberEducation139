@@ -1,0 +1,519 @@
+/* =====================================================
+   ROOT VARIABLES (Tema yang disamakan dengan Quiz)
+===================================================== */
+:root {
+  --primary: #5b5bf7;
+  --primary-dark: #7c3aed;
+  --primary-gradient: linear-gradient(90deg, #5b5bf7, #8b5cf6);
+  --text-main: #1e293b;
+  --text-light: #64748b;
+  --bg-main: #ffffff;
+  --bg-soft: #f8fafc;
+  --bg-accent: #eef2ff;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #118adb;
+}
+
+/* =====================================================
+   BASE & COMMON
+===================================================== */
+.phishing {
+  background: var(--bg-main);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  margin: 15px 0;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.section-title p {
+  color: var(--text-light);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 15px auto 0;
+  line-height: 1.8;
+}
+
+/* Button Dasar */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(91, 91, 247, 0.3);
+}
+
+/* Base Card Style (Meniru .quiz-card) */
+.base-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.35s;
+  position: relative;
+}
+
+.base-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--primary-gradient);
+  transform: scaleX(0);
+  transition: 0.35s;
+  z-index: 10;
+}
+
+.base-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+}
+
+.base-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =====================================================
+   HERO (Diadaptasi dari .quiz-hero)
+===================================================== */
+.phishing-hero {
+  padding: 170px 0 100px;
+  background: 
+    radial-gradient(circle at top right, #dfe8ff 0%, transparent 35%),
+    radial-gradient(circle at bottom left, #eef2ff 0%, transparent 35%), #ffffff;
+}
+
+.phishing-hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 25px 0;
+  color: var(--text-main);
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: var(--primary);
+}
+
+.hero-content p {
+  max-width: 560px;
+  color: var(--text-light);
+  line-height: 1.9;
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  animation: float 5s infinite ease-in-out;
+}
+
+/* =====================================================
+   INFO SECTION (Diadaptasi dari .benefit-card / .stat-card)
+===================================================== */
+.phishing-info {
+  padding: 100px 0;
+  background: var(--bg-soft);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.info-card {
+  padding: 40px;
+  text-align: center;
+}
+
+.info-card i {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--bg-accent);
+  color: var(--primary);
+  font-size: 32px;
+  transition: 0.3s;
+}
+
+.info-card h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: var(--text-main);
+}
+
+.info-card p {
+  color: var(--text-light);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* =====================================================
+   EMAIL SIMULATION
+===================================================== */
+.email-simulation {
+  padding: 100px 0;
+  background: var(--bg-main);
+}
+
+.email-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 60px;
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  border-bottom: 1px solid #e5e7eb;
+  background: var(--bg-soft);
+}
+
+.email-header img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.email-header h3 {
+  margin-bottom: 8px;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.email-header span {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.email-body {
+  padding: 35px;
+}
+
+.email-body h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: var(--text-main);
+}
+
+.email-body p {
+  color: var(--text-light);
+  line-height: 1.9;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.email-card button {
+  width: 100%;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.safe-btn {
+  background: var(--success);
+  color: white;
+}
+.safe-btn:hover { background: #16a34a; }
+
+.phishing-btn {
+  background: var(--danger);
+  color: white;
+}
+.phishing-btn:hover { background: #dc2626; }
+
+/* =====================================================
+   WEBSITE SIMULATION
+===================================================== */
+.website-simulation {
+  padding: 100px 0;
+  background: var(--bg-soft);
+}
+
+.website-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 60px;
+}
+
+.website-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.website-card:hover img {
+  transform: scale(1.08);
+}
+
+.website-card h3 {
+  padding: 25px;
+  font-size: 18px;
+  text-align: center;
+  word-break: break-word;
+  color: var(--text-main);
+  background: var(--bg-main);
+  font-family: 'Courier New', monospace;
+}
+
+.website-card button {
+  width: calc(100% - 50px);
+  margin: 0 25px 25px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =====================================================
+   WARNING SECTION
+===================================================== */
+.warning-section {
+  padding: 100px 0;
+  background: #ffffff; /* Warna peringatan tetap halus */
+}
+
+.warning-card {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.warning-icon img {
+  width: 200px;
+  animation: float 5s infinite ease-in-out;
+}
+
+.warning-content {
+  flex: 1;
+}
+
+.warning-content h2 {
+  font-size: 38px;
+  color: var(--danger);
+  margin-bottom: 25px;
+}
+
+.warning-content li {
+  margin-bottom: 18px;
+  line-height: 1.9;
+  color: var(--text-light);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.warning-content li i,
+.warning-content li:before {
+  content: '✓';
+  color: var(--danger);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* =====================================================
+   CTA (Diadaptasi dari .quiz-cta)
+===================================================== */
+.phishing-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.phishing-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.cta-content h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta-content p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.9;
+  max-width: 600px;
+}
+
+.cta-button {
+  display: flex;
+  gap: 20px;
+}
+
+.cta-button .btn-primary {
+  background: #fff;
+  color: var(--primary);
+}
+
+.cta-button .btn-primary:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button .btn-outline {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button .btn-outline:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* =====================================================
+   RESPONSIVE (Diadaptasi dari Quiz)
+===================================================== */
+@media (max-width: 992px) {
+  .phishing-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-content p {
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .email-grid, 
+  .website-grid {
+    grid-template-columns: 1fr;
+  }
+  .phishing-cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .warning-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .phishing-hero {
+    padding-top: 120px;
+  }
+  .hero-content h1 {
+    font-size: 42px;
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .warning-card {
+    padding: 30px;
+  }
+  .warning-content h2 {
+    font-size: 32px;
+  }
+  .cta-content h2 {
+    font-size: 34px;
+  }
+  .cta-button {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cta-button a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .warning-content h2 {
+    font-size: 26px;
+  }
+  .info-card {
+    padding: 25px;
+  }
+}

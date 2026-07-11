@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Security Quiz | CyberEdu</title>
+
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/quiz-play.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo/logo.png" alt="CyberEdu Logo" />
+          <span>Cyber Education</span>
+        </a>
+
+        <nav class="nav-menu">
+          <a href="index.html">Beranda</a>
+          <a href="artikel.html">Artikel</a>
+          <a href="tips.html">Tips</a>
+          <a href="phishing.html">Simulasi</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">Tentang</a>
+        </nav>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="quiz-play">
+        <!-- Semua konten quiz dibungkus di dalam satu container -->
+        <div class="container">
+          <!-- QUIZ HEADER -->
+          <div class="quiz-header">
+            <div class="quiz-title">
+              <span class="badge">Cyber Security Basic</span>
+              <h1 id="quizTitle">Cyber Security Basic Quiz</h1>
+              <p>
+                Jawab semua pertanyaan dengan benar untuk memperoleh skor
+                terbaik.
+              </p>
+            </div>
+
+            <div class="quiz-timer">
+              <div class="timer-circle">
+                <i class="fa-solid fa-clock"></i>
+                <span id="timer">10:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROGRESS SECTION -->
+          <div class="progress-section">
+            <div class="progress-top">
+              <span>
+                Soal <strong id="questionNumber">1</strong> /
+                <span id="totalQuestion">20</span>
+              </span>
+              <span id="progressText">5%</span>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+
+          <!-- QUESTION CARD -->
+          <div class="question-card">
+            <span class="question-category" id="category">Cyber Security</span>
+            <h2 id="question">Loading...</h2>
+            <div class="answers" id="answers"></div>
+          </div>
+
+          <!-- NAVIGATION -->
+          <div class="navigation">
+            <button id="prevBtn" class="btn-outline">
+              <i class="fa-solid fa-arrow-left"></i> Sebelumnya
+            </button>
+            <button id="nextBtn" class="btn-primary">
+              Selanjutnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- RESULT SECTION -->
+          <section class="result" id="resultSection">
+            <div class="result-card">
+              <div class="result-icon">🏆</div>
+              <h2>Quiz Selesai</h2>
+              <p>Terima kasih telah mengikuti quiz.</p>
+
+              <div class="score">
+                <span id="score">0</span><small>/100</small>
+              </div>
+
+              <div class="result-grid">
+                <div>
+                  <h3 id="correct">0</h3>
+                  <p>Benar</p>
+                </div>
+                <div>
+                  <h3 id="wrong">0</h3>
+                  <p>Salah</p>
+                </div>
+                <div>
+                  <h3 id="grade">A</h3>
+                  <p>Grade</p>
+                </div>
+              </div>
+
+              <div class="result-button">
+                <a href="quiz-play.html" class="btn-outline">Ulangi</a>
+                <a href="quiz.html" class="btn-primary">Kembali</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/quiz-play.js"></script>
+  </body>
+</html>
